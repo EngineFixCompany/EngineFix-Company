@@ -102,6 +102,7 @@ body {
 @media (max-width: 767px) {
     .burger-menu {
         display: flex;
+        margin-right: 30px;
     }
 
     .nav-links {
