@@ -412,34 +412,67 @@ p {
 .team-container .descr p {
     margin: 0;
 }
-@media (max-width: 768px) { /* Для устройств с шириной экрана до 768px */
-    .text3 {
-        font-size: 24px; /* Уменьшаем размер текста заголовка */
-        margin-bottom: 8px;
-    }
-
-    .team-container {
-        flex-direction: column; /* Меняем направление на вертикальное */
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .team-container .descr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    padding-top: 20px;   /* Отступ сверху */
+    padding-right: 15px; /* Отступ справа */
+    padding-bottom: 10px;/* Отступ снизу */
+    padding-left: 5px;   /* Отступ слева */
+}
+    .team-container {
+        flex-direction: column; /* Элементы в столбец */
+        align-items: center; /* Центрирование */
+        justify-content: center; /* Дополнительное центрирование */
+        margin-top: 20px; /* Отступ сверху */
+        margin-bottom: 40px; /* Отступ снизу для большего пространства */
+        margin-right: 25px;
     }
-
-    .team-container ul {
-        margin: 10px 0; /* Убираем боковые отступы, добавляем вертикальные */
-    }
-
-    .team-container img { 
-        height: auto; /* Высота подстраивается пропорционально ширине */
-        padding: 10px; /* Уменьшаем отступы */
-        margin: auto;
-    }
-
     .team-container .descr {
-        padding: 5px; /* Уменьшаем отступы внутри описания */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    padding-top: 20px;   /* Отступ сверху */
+    padding-right: 15px; /* Отступ справа */
+    padding-bottom: 0px;/* Отступ снизу */
+    padding-left: 5px;   /* Отступ слева */
+}
+    .team-container ul {
+        margin-bottom: 20px; /* Добавление промежутков между карточками */
+    }
+
+    .team-container img {
+        padding: 10px;
+        margin-right: 15px;
     }
 
     .team-container .descr p {
-        font-size: 14px; /* Уменьшаем размер текста описания */
+        font-size: 12px; /* Уменьшение текста для мобильной версии */
     }
 }
 .footer {
