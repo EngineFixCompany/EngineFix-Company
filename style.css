@@ -265,7 +265,7 @@ p {
     text-align: center;
 }
    .container {
-        width: 100%; /* Full width on small screens */
+        width: 75%;
         padding: 10px; /* Adjust padding for smaller screens */
     }
 
@@ -560,4 +560,4 @@ p {
     .footer-section .underline {
         width: 40px; /* Reduce width of the underline */
     }
-}
+} 
